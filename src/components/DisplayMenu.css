@@ -1,0 +1,84 @@
+/* src/components/DisplayMenu.css */
+
+.display-menu {
+  position: relative;
+  margin-left: 60px; /* Adjust as needed to align with "Todo" column */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.display-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.display-button:hover {
+  background-color: #f0f0f0;
+}
+
+.icon-arrow {
+  margin-left: 8px;
+  font-size: 12px;
+  transition: transform 0.3s;
+}
+
+.icon-arrow.open {
+  transform: rotate(180deg);
+}
+
+.menu-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+  padding: 10px;
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.menu-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.menu-option label {
+  font-size: 14px;
+  color: #333;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.select-wrapper select {
+  width: 100%;
+  padding: 4px 24px 4px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  appearance: none;
+  cursor: pointer;
+}
+
+.select-wrapper .icon-arrow {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}

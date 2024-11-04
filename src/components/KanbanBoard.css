@@ -1,0 +1,23 @@
+/* src/components/KanbanBoard.css */
+
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.kanban-column {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f4f4f4;
+}
+
+.kanban-column h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
